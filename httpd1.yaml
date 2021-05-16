@@ -6,3 +6,8 @@
         yum:
            name: httpd
            state: present
+      - name: service restart 
+        service:
+           name: httpd
+           state: restarted
+           enabled: true
